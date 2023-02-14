@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-app.get('/', (req, res) => {
+app.get('/send-email', (req, res) => {
     sendEmail()
     res.status(200).send('welcome to node js')
 })
